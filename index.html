@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Угадай число!</h1>
+        <p>Я загадал число от <span id="range">1 до 100</span>.</p>
+        <input type="number" id="guessInput" placeholder="Введите ваше число" />
+        <button id="guessButton">Угадать</button>
+        <div id="message"></div>
+        <div id="score">Попытки: 0</div>
+        <div id="timer">Осталось времени: <span id="timeLeft">30</span> секунд</div>
+        <div id="record">Рекорд: 0 попыток</div>
+        <div class="difficulty-buttons">
+            <button class="difficulty" data-level="easy">Легкий</button>
+            <button class="difficulty" data-level="medium">Средний</button>
+            <button class="difficulty" data-level="hard">Сложный</button>
+        </div>
+        <button id="restartButton" style="display:none;">Начать заново</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
